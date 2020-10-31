@@ -1,0 +1,42 @@
+/* WHAT HAVE YOU DONE */
+.what_have_you_done {
+	// color: material-color('deep-purple', '200');
+	// overflow: hidden;
+
+	> .presentation {
+		transform: scale(9) translate(0%, 0%) rotate(33deg);
+		mix-blend-mode: hard-light;
+	}
+
+	h2 {
+		font-family: 'bajernregular';
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 6vh 0vw;
+	}
+
+	.column {
+		flex: 25%;
+		max-width: 25%;
+		padding: 0 1vw;
+		@media (max-width: 800px) {
+			flex: 50%;
+			max-width: 50%;
+		}
+		@media (max-width: 600px) {
+			flex: 100%;
+			max-width: 100%;
+		}
+
+		img {
+			margin-top: 1vh;
+			vertical-align: middle;
+			width: 100%;
+			mix-blend-mode: hard-light;
+		}
+	}
+
+}

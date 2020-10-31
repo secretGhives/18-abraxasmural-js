@@ -1,0 +1,71 @@
+/* HEADER */
+header.hero-top {
+	position: relative;
+  height: 100vh;
+  text-align: center;
+	// overflow: hidden;
+
+	svg {
+		transform: skew(-12deg, -12deg);
+		width: 60vw;
+		mix-blend-mode: multiply;
+	}
+	svg path {
+		stroke-dasharray: 100;
+		animation: dash 10s ease infinite;
+		stroke-dashoffset: 666;
+		stroke: white;
+		stroke-width: 0.6em;
+		// stroke-opacity: 0.6;
+		stroke-linecap: square;
+		// stroke-dasharray: 10 4, 5 10, 1 1, 10 30;
+		fill: #00051d;
+	}
+
+	@keyframes dash {
+		50% {
+			stroke-dashoffset: 333;
+			stroke: white;
+			fill: #1d0000;
+		}
+	}
+
+	> .logo {
+		font-size: 27vw;
+		line-height: 0.6;
+		z-index: 1;
+		color: $color-yellow;
+		mix-blend-mode: difference;
+		transform: skew(-12deg, -12deg);
+	}
+	> .sublogo {
+		font-size: 6vw;
+		letter-spacing: 2vw;
+		margin-left: 2vw;
+		mix-blend-mode: hard-light;
+		z-index: 1;
+		transform: skew(-12deg, -12deg);
+	}
+
+	> .sublogo > .sigil {
+		width: 6vw;
+		vertical-align: middle;
+		margin-right: 2vw;
+		z-index: 1;
+	}
+
+	> .presentation {
+		top: 50%; left: 50%;
+		transform: translate(-50%, -70%) rotate(45deg);
+		background-color: #ff0;
+		height: 30vh; width: 60vh;
+	}
+
+	// @media (prefers-reduced-motion: reduce) {
+	// 	.presentation {
+	// 		/* Stop the animation */
+	// 		/* Provide alternate styling */
+	// 	}
+	// }
+
+}

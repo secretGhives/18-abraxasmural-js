@@ -1,0 +1,22 @@
+/* HOW DO I HIRE YOU */
+.how_do_i_hire_you {
+	// overflow: hidden;
+
+	> .presentation {
+		transform: scale(10) translate(0%, 0%) rotate(60deg);
+	}
+
+	.content {
+		color: $color-magenta;
+		mix-blend-mode: color-burn;
+	}
+
+	.title {
+		font-family: 'bajernregular';
+	}
+
+	form {
+		font-size: 2.2rem;
+		margin-top: 9vh;
+	}
+}

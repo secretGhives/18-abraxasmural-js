@@ -1,0 +1,31 @@
+/* WHAT DO YOU OFFER */
+.what_do_you_offer {
+	// overflow: hidden;
+
+	> .presentation {
+		transform: scale(5) translate(-30%, 0%) rotate(0deg);
+	}
+
+	img {
+		mix-blend-mode: difference;
+	}
+
+	.left {
+		flex: 2;
+		align-items: flex-start;
+		margin-left: 2rem;
+		mix-blend-mode: color-burn;
+		color: $color-magenta;
+	}
+
+	h2 {
+		font-family: 'bajernregular';
+	}
+
+	ul {
+		width: 100%;
+	}
+	ul li {
+		font-weight: 600;
+	}
+}
